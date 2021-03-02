@@ -11314,3 +11314,155 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 100ms (Views: 94.7ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/" for 106.73.75.65 at 2021-03-02 22:10:13 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 2896ms (Views: 2878.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 106.73.75.65 at 2021-03-02 22:10:16 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 579ms (Views: 578.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 106.73.75.65 at 2021-03-02 22:10:19 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (0.6ms)
+Started GET "/" for 106.73.75.65 at 2021-03-02 22:10:19 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1168ms (Views: 1167.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1199ms (Views: 1198.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 106.73.75.65 at 2021-03-02 22:10:23 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 763ms (Views: 732.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/sign_up" for 106.73.75.65 at 2021-03-02 22:10:27 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 536ms (Views: 535.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 106.73.75.65 at 2021-03-02 22:10:37 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tPH7eT3ZydZN4NzTFw+6oFXl5MRsZgCduNkIPiseHkLFfnlPrDpg/AhuNcRqPgUXQEcrxhbb59YqTmX5aoBl9w==", "user"=>{"name"=>"kame", "email"=>"t@t.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "t@t.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "kame"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.6ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 895ms (Views: 546.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 106.73.75.65 at 2021-03-02 22:10:42 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 525ms (Views: 524.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 106.73.75.65 at 2021-03-02 22:10:46 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBGQgFfRqT7dwMPe7YQFS4qwNaY4y59+7R/3gfo5qbeHni038p8cnzOH+8Wl3yheb9opsoDOO51sswGCec3z6w==", "user"=>{"name"=>"kame", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["name", "kame"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://43671dec3f2045418e68b977ea2fe1e7.vfs.cloud9.us-east-1.amazonaws.com/users/1
+Completed 302 Found in 318ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 106.73.75.65 at 2021-03-02 22:10:47 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (0.9ms)
+  Rendered books/_book.html.erb (7.2ms)
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "book_comments" WHERE "book_comments"."book_id" = ?[0m  [["book_id", 8]]
+  ↳ app/views/users/show.html.erb:28
+  Rendered users/show.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 639ms (Views: 599.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/attachments/93c1af0c169e05fc3310312f81d84c2dd466f448/store/fill/60/60/52b6e37e0c3840603a64c7b01dd290c8b473cc3d311ceff01e3cc0b97e48/profile_image" for 106.73.75.65 at 2021-03-02 22:10:48 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/6d8d73eaccd359d207c6da0d6cc688be5d3e05f0/store/fill/30/30/52b6e37e0c3840603a64c7b01dd290c8b473cc3d311ceff01e3cc0b97e48/profile_image" for 106.73.75.65 at 2021-03-02 22:10:48 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-03-02 22:10:48 +0000] GET "/6d8d73eaccd359d207c6da0d6cc688be5d3e05f0/store/fill/30/30/52b6e37e0c3840603a64c7b01dd290c8b473cc3d311ceff01e3cc0b97e48/profile_image" 200 187.5ms
+
+Refile::App: [2021-03-02 22:10:48 +0000] GET "/93c1af0c169e05fc3310312f81d84c2dd466f448/store/fill/60/60/52b6e37e0c3840603a64c7b01dd290c8b473cc3d311ceff01e3cc0b97e48/profile_image" 200 212.0ms
+
+Started GET "/users/1/edit" for 106.73.75.65 at 2021-03-02 22:10:56 +0000
+Cannot render console from 106.73.75.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 527ms (Views: 522.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateRelationships (20210302221248)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20210302221248_create_relationships.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "relationships" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210302221248_create_relationships.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210302221248"]]
+  ↳ bin/rails:9
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
